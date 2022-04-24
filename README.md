@@ -9,8 +9,6 @@ Semua komponen dipackage dengan docker
 
 ## Menjalankan Postgres dengan Docker
 
-Dari [Video ke-8](https://www.youtube.com/watch?v=45FjeTSla3o)
-
 Step 1: Jalankan Postgres
 ```bash
 docker run -p 5432:5432 --name todo-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=rahasia -e POSTGRES_DB=belajar -v $(pwd)/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql -d postgres
@@ -49,8 +47,6 @@ SELECT * FROM todo;
 ```
 
 ## Menjalankan Semuanya sebagai Docker Container
-
-Dari [Video ke-9](https://www.youtube.com/watch?v=OYJf_xLeB9o) dan [ke-10](https://www.youtube.com/watch?v=gRlioOhPkEo)
 
 Step 1: Buat Docker Network
 ```bash
